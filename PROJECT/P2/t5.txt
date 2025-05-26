@@ -1,0 +1,119 @@
+
+Reading entry from 0x1cde2d0 ... 
+4 entries stored in matrix at 0x1cde510.
+
+matrix at 0x1cde510 ...
+    1 (1,8)     8 (1,6)     7 (1,4)     1 (1,7) 
+
+Reading entry from 0x1cde2d0 ... 
+5 entries stored in matrix at 0x1cde670.
+
+matrix at 0x1cde670 ...
+    1 (2,2)     8 (2,4)     7 (1,3)     5 (2,3)     6 (1,5) 
+
+Reading entry from 0x1cde2d0 ... 
+6 entries stored in matrix at 0x1cde820.
+
+matrix at 0x1cde820 ...
+    1 (2,2)     8 (2,3)     7 (2,1)     6 (3,2)     7 (3,1) 
+    9 (3,3) 
+
+Reading entry from 0x1cde2d0 ... 
+7 entries stored in matrix at 0x1cdea20.
+
+matrix at 0x1cdea20 ...
+    1 (4,2)     8 (4,3)     7 (3,1)     5 (2,3)     6 (3,2) 
+    9 (1,2)     7 (1,1) 
+
+Reading entry from 0x1cde2d0 ... 
+10 entries stored in matrix at 0x1cdec70.
+
+matrix at 0x1cdec70 ...
+    1 (2,2)     8 (2,4)     7 (5,3)     5 (2,3)     6 (3,5) 
+    1 (5,1)     9 (5,2)     7 (3,3)     9 (3,1)     1 (6,3) 
+
+search 7 in matrix at 0x1cde510 ...
+1 4
+
+find max in matrix at 0x1cde510 ...
+maximum 8 at position (1, 6)
+
+Adding 0x1cde510 to 0x1cde010 ...
+
+matrix at 0x1cde2f0 ...
+    1 (1,8)     8 (1,6)     7 (1,4)     1 (1,7) 
+
+search 7 in matrix at 0x1cde670 ...
+1 3
+
+find max in matrix at 0x1cde670 ...
+maximum 8 at position (2, 4)
+
+Adding 0x1cde670 to 0x1cde2f0 ...
+
+matrix at 0x1cde450 has 9 non-zero entries.
+
+matrix at 0x1cde450 ...
+    1 (1,8)     8 (1,6)     7 (1,4)     1 (1,7)     1 (2,2) 
+    8 (2,4)     7 (1,3)     5 (2,3)     6 (1,5) 
+
+search 7 in matrix at 0x1cde820 ...
+2 1
+3 1
+
+find max in matrix at 0x1cde820 ...
+maximum 9 at position (3, 3)
+
+Adding 0x1cde820 to 0x1cde450 ...
+
+matrix at 0x1cdf1e0 has 13 non-zero entries.
+
+matrix at 0x1cdf1e0 ...
+    1 (1,8)     8 (1,6)     7 (1,4)     1 (1,7)     2 (2,2) 
+    8 (2,4)     7 (1,3)    13 (2,3)     6 (1,5)     7 (2,1) 
+    6 (3,2)     7 (3,1)     9 (3,3) 
+
+search 7 in matrix at 0x1cdea20 ...
+3 1
+1 1
+
+find max in matrix at 0x1cdea20 ...
+maximum 9 at position (1, 2)
+
+Adding 0x1cdea20 to 0x1cdf1e0 ...
+
+matrix at 0x1cdf610 has 17 non-zero entries.
+
+matrix at 0x1cdf610 ...
+    1 (1,8)     8 (1,6)     7 (1,4)     1 (1,7)     2 (2,2) 
+    8 (2,4)     7 (1,3)    18 (2,3)     6 (1,5)     7 (2,1) 
+   12 (3,2)    14 (3,1)     9 (3,3)     1 (4,2)     8 (4,3) 
+    9 (1,2)     7 (1,1) 
+
+search 7 in matrix at 0x1cdec70 ...
+5 3
+3 3
+
+find max in matrix at 0x1cdec70 ...
+maximum 9 at position (5, 2)
+
+Adding 0x1cdec70 to 0x1cdf610 ...
+
+matrix at 0x1cdfb80 has 22 non-zero entries.
+
+matrix at 0x1cdfb80 ...
+    1 (1,8)     8 (1,6)     7 (1,4)     1 (1,7)     3 (2,2) 
+   16 (2,4)     7 (1,3)    23 (2,3)     6 (1,5)     7 (2,1) 
+   12 (3,2)    23 (3,1)    16 (3,3)     1 (4,2)     8 (4,3) 
+    9 (1,2)     7 (1,1)     7 (5,3)     6 (3,5)     1 (5,1) 
+    9 (5,2)     1 (6,3) 
+
+Subtracting 0x1cde510 from 0x1cdfb80 ...
+
+matrix at 0x1ce03e0 has 18 non-zero entries.
+
+matrix at 0x1ce03e0 ...
+    3 (2,2)    16 (2,4)     7 (1,3)    23 (2,3)     6 (1,5) 
+    7 (2,1)    12 (3,2)    23 (3,1)    16 (3,3)     1 (4,2) 
+    8 (4,3)     9 (1,2)     7 (1,1)     7 (5,3)     6 (3,5) 
+    1 (5,1)     9 (5,2)     1 (6,3) 

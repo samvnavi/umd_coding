@@ -1,0 +1,91 @@
+Files under this directory:
+s_in_[1-5].txt: 5 small input (sparse) matrices with 4-10 non-zero entries
+l_ini_1.txt: 	a large sparse matrix with 300 non-zero entries
+x_sparse.h: 	the header file, the x-th version
+sparse.c: 	a sample file that you can use to build your project
+x_p2_1.c: 	sample p2_1.c, the x-th version
+
+x_sparse.o: 	the object file obtained by the following command using x_sparse.h
+        gcc -c sparse.c -o sparse.o
+x_a.out: 	the executable obtained by the following command
+        gcc p2_1.c sparse.o
+t[1-5].txt: 	output files for the following commands:
+        a.out s_in_1.txt t1.out
+        a.out s_in_1.txt s_in_2.txt t2.txt
+        a.out s_in_1.txt s_in_2.txt s_in_3.txt t3.txt
+        a.out s_in_1.txt s_in_2.txt s_in_3.txt s_in_4.txt t4.txt
+        a.out s_in_1.txt s_in_2.txt s_in_3.txt s_in_4.txt s_in_5.txt t5.txt
+!!!!!
+sparse.h and p2_2.c are the files that will be used to grade your sparse_2.c
+you can run a.out on the test input files.
+!!!!!
+
+*****************************************************************************
+
+Fri May  2 14:33:14 EDT 2025
+Q7. Do we have to use those left, right, up, down pointers?
+A.  You do not have to, but it would be easier if you implement those features 
+	and use them to complete the project.
+
+Tue Apr 29 07:28:30 EDT 2025
+Q6. When we do multiplication, what should we output if one of the matrices 
+	does not exist?
+A.  When a matrix does not exist, return NULL as the product.
+    When a matrix is empty (all zeros), return an empty matrix.
+
+Fri Apr 25 16:51:39 EDT 2025
+Q5. Do I have to use the new structures you discussed in Wednesday's lecture
+	for the project:
+A.  No. You do not have to use them. But using them will make Phase II much 
+	earier. By the way, the slides (plus some features that I have not
+	discussed) are posted in the Project folder on ELMS. We will go over
+	them during Monday's lecture.
+ 
+
+Fri Apr 25 16:44:26 EDT 2025
+Q4. Was the project deadline being pushed to Saturday?
+A.  Yes. I have extended the deadline for both Phase I and II by one day (from
+	the original deadlines on the project description) to Saturday. 
+
+
+Wed Apr 23 17:13:43 EDT 2025
+Q3. I used only the singly linked list you created in read_input() function to
+	implement search() and find_max() functions and did not use any of the
+	up/down/left/right pointers in the ENTRY structure. Will that be ok?
+A.  That is ok. It is also possible to implement addition() and subtraction()
+	with only that singly linked list. But taking advantages of other 
+	pointers (up/down/left/right) could make it easier, particularly for
+	Phase II. 
+
+
+Sun Apr 20 12:43:35 EDT 2025
+Q2. About the example file 1_sparse.c
+A.  This is an example for you to start on your own sparse.c. It implements
+	some basic functions that are needed to create linked list:
+		make_node(), make_root(),insert_at_tail()
+	It also implements two functions
+		show_list(), read_input()
+ 	Note that read_input() is not defined in sparse.h. This shows how 
+	you can define functions (and variables, structures), other than those
+	in sparse.h, in your own sparse.c to facilitate the implementation of
+	other functions. 
+    1_sparse.o: created by 1_sparse.c
+    1_a.out: created by 1_p2_1.c and 1_sparse.o
+
+    1_a.out can be used to read in input files and show the linked listed
+	created by read_input(). See the two example output files
+		output3.text, output5.txt
+
+
+Sun Apr 20 12:20:22 EDT 2025
+Q1. What do I need to submit for the project and how it will be graded? 
+A. For each phase, a sparse.h and a p2_[12].c file will be posted, you need to
+	implement the functions defined in sparse.h so p2_[12].c can be compiled
+	and execute correctly. 
+   1. you submit sparse_[12].c 
+   2. we will compile with the following commands
+	gcc -c sparse_[12].c -o sparse.o
+	gcc p2_[12].c sparse.o
+   3. run the a.out code from item 2 on different input files
+   4. one or more p2_[12].c might be used in step 2
+	and read_input(). These are sufficient to support 1_p2_1.c 

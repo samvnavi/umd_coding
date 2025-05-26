@@ -1,0 +1,15 @@
+o
+5 B x
+4 C x
+5 C o
+4 G x
+7 D x
+5 E o
+5 D o
+6 D x
+3 F x
+3 D x
+4 E x
+4 F x
+3 E o
+4 D x

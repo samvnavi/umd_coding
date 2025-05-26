@@ -1,0 +1,199 @@
+/* Sample solutions for the first three problems in the homework.
+   When you answer other problems, keep the portion above the line 
+// DO NOT MAKE CHANGES ABOVE THIS LINE.
+   After you implement the function defined in each problem, complete
+	the main() function to create a linked list to test your function.
+
+   If you find the function(s) defined for problem 1 and/or problem 2
+	useful, feel free to use them.
+
+							Gang Qu
+*/
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+#define NEW(x) (x*)malloc(sizeof(x))
+
+typedef struct node
+{ int * data;
+  struct node * next;
+} NODE;
+
+typedef struct
+{ NODE *head;
+} ROOT;
+
+NODE * make_node (int *data)
+{ NODE * temp;
+  temp = NEW(NODE);
+  if (temp != NULL)
+  { temp->data = data;
+    temp->next = NULL;
+  }
+  return temp;
+}
+
+ROOT * make_root (void)
+{ ROOT * temp;
+  temp = NEW(ROOT);
+  if (temp != NULL)
+    temp->head = NULL;
+  return temp;
+}
+
+// DO NOT MAKE CHANGES ABOVE THIS LINE.
+
+int insert_at_tail(ROOT *r, int *d)	// problem 1. 
+{ NODE *temp, *curr ;
+  temp = make_node(d);
+
+  if (temp == NULL) return -1;  // fail, cannot create new NODE
+
+  if (r == NULL)
+  { r = make_root();
+    if (r == NULL) return -1;   // fail, cannot create ROOT
+  }
+
+  curr = r->head;		// when the linked list is empty
+  if (curr == NULL)
+  { r->head = temp;
+    return 0;
+  }
+
+  for (; curr->next != NULL; curr = curr->next);
+				// find the tail, empty loop body
+  curr->next = temp; 		// link node temp to the linked list 
+				// at the tail.
+
+  return 0;
+}
+
+void display_list(ROOT *r)	// problem 2.
+{ NODE *temp;
+  if (r == NULL) return;		// undefinted linked list
+  if (r->head == NULL) return;		// empty linked list
+  
+  for (temp = r->head; temp != NULL; temp = temp->next)
+    printf("%d->", *temp->data);
+  printf("/\n");
+}
+
+int countx(ROOT *r, int x){ // problem 4
+    NODE *temp;
+    int count = 0;
+    for(temp = r->head; temp != NULL; temp = temp->next){
+        if(*(temp->data) == x){
+            count++;
+        }
+    }
+    return count;
+}
+
+int getk(ROOT *r, int k){ // problem 5
+    NODE *temp;
+    int index = 1;
+    for(temp = r->head; temp != NULL; temp = temp->next){
+        if (index == k){
+            return *(temp->data);
+        }
+        index++;
+    }
+    return -1;
+}
+
+int getk_backwards(ROOT *r, int k){ // problem 6
+    NODE *temp;
+    int size = 0;
+    for(temp = r->head; temp != NULL; temp = temp->next){
+        size++;
+    }
+
+    if(k > size){
+        return -1;
+    }
+
+    int index = size - k + 1;
+    
+    return getk(r,index);
+}
+
+int getk_backwards_faster(ROOT *r, int k){
+    NODE *temp;
+    NODE *follower = NULL;
+    
+    int index = 1;
+    for(temp = r->head; temp != NULL; temp = temp->next){
+        if(index == k){
+            follower = r->head;
+        }
+        if(index > k){
+            follower = follower->next;
+        }
+        index++;
+    }
+    if(follower == NULL){
+        return -1;
+    } else {
+        return *(follower->data);
+    }
+}
+
+int main(void)
+{ int value, i;
+  int *p;
+  NODE *temp;
+  ROOT *r;
+
+  r = make_root();
+  if (r == NULL)
+    return -1;
+
+  for (i=0; i<10; i++)
+  { value = rand()%11 + 10;
+    p = NEW(int);
+    if (p == NULL) 
+      return -1;
+
+    *p = value;
+
+    insert_at_tail(r, p);
+  }
+
+  display_list(r);
+
+  // Testing question 4
+  
+  printf("QUESTION 4 - enter number to count: ");
+  int x;
+  scanf("%d",&x);
+
+  printf("Count: %d\n",countx(r,x));
+
+  // Testing question 5
+
+  printf("QUESTION 5 - enter k: ");
+  int k;
+  scanf("%d",&k);
+
+  printf("Data: %d\n", getk(r,k));
+
+  // Testing question 6
+
+  printf("QUESTION 6 - enter k: ");
+  scanf("%d",&k);
+
+  printf("Data: %d\n", getk_backwards(r,k));
+
+  // Testing question 6, again
+
+  printf("QUESTION 6 but faster - enter k: ");
+  scanf("%d",&k);
+
+  printf("Data: %d\n", getk_backwards_faster(r,k));
+
+  return 0;
+}
+
+     

@@ -1,0 +1,20 @@
+Files in this directory:
+1. Q_and_A.txt: this file
+2. initial.txt: the initial game board
+3. input1.txt: the game board shown as Fig. 2 in the project description
+4. phase_1.out: a sample executable for phase 1, to run it, type
+	phase_1.out initial.txt
+5. phase_2.out: a sample executable for phase 2 
+6. win.txt, lose.txt: the output files of the following command
+	phase_2.out input2.txt win.txt
+	phase_2.out input2.txt lose.txt
+***************************************************************************
+Thu Mar 13 23:52:59 EDT 2025
+Q. What should the program do if the user denies the confirmation of his move 
+	three times?
+A. The project description states "The user has up to three attempts before 
+	confirming a move". So after the user enters 'n' twice, the third 
+	attempt is his last chance and any valid move will be considered 
+	confirmed. The program should not prompt the user to confirm for 
+	the third time.
+

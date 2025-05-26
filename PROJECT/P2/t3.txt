@@ -1,0 +1,68 @@
+
+Reading entry from 0x1d8a2c0 ... 
+4 entries stored in matrix at 0x1d8a500.
+
+matrix at 0x1d8a500 ...
+    1 (1,8)     8 (1,6)     7 (1,4)     1 (1,7) 
+
+Reading entry from 0x1d8a2c0 ... 
+5 entries stored in matrix at 0x1d8a660.
+
+matrix at 0x1d8a660 ...
+    1 (2,2)     8 (2,4)     7 (1,3)     5 (2,3)     6 (1,5) 
+
+Reading entry from 0x1d8a2c0 ... 
+6 entries stored in matrix at 0x1d8a810.
+
+matrix at 0x1d8a810 ...
+    1 (2,2)     8 (2,3)     7 (2,1)     6 (3,2)     7 (3,1) 
+    9 (3,3) 
+
+search 7 in matrix at 0x1d8a500 ...
+1 4
+
+find max in matrix at 0x1d8a500 ...
+maximum 8 at position (1, 6)
+
+Adding 0x1d8a500 to 0x1d8a010 ...
+
+matrix at 0x1d8a2e0 ...
+    1 (1,8)     8 (1,6)     7 (1,4)     1 (1,7) 
+
+search 7 in matrix at 0x1d8a660 ...
+1 3
+
+find max in matrix at 0x1d8a660 ...
+maximum 8 at position (2, 4)
+
+Adding 0x1d8a660 to 0x1d8a2e0 ...
+
+matrix at 0x1d8a440 has 9 non-zero entries.
+
+matrix at 0x1d8a440 ...
+    1 (1,8)     8 (1,6)     7 (1,4)     1 (1,7)     1 (2,2) 
+    8 (2,4)     7 (1,3)     5 (2,3)     6 (1,5) 
+
+search 7 in matrix at 0x1d8a810 ...
+2 1
+3 1
+
+find max in matrix at 0x1d8a810 ...
+maximum 9 at position (3, 3)
+
+Adding 0x1d8a810 to 0x1d8a440 ...
+
+matrix at 0x1d8ac40 has 13 non-zero entries.
+
+matrix at 0x1d8ac40 ...
+    1 (1,8)     8 (1,6)     7 (1,4)     1 (1,7)     2 (2,2) 
+    8 (2,4)     7 (1,3)    13 (2,3)     6 (1,5)     7 (2,1) 
+    6 (3,2)     7 (3,1)     9 (3,3) 
+
+Subtracting 0x1d8a500 from 0x1d8ac40 ...
+
+matrix at 0x1d8b1d0 has 9 non-zero entries.
+
+matrix at 0x1d8b1d0 ...
+    2 (2,2)     8 (2,4)     7 (1,3)    13 (2,3)     6 (1,5) 
+    7 (2,1)     6 (3,2)     7 (3,1)     9 (3,3) 

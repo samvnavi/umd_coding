@@ -1,0 +1,39 @@
+3 C x
+2 C o
+3 A x
+2 B o
+1 D x
+1 C o
+1 E x
+1 F o
+2 A x
+5 A o
+2 E x
+1 A o
+2 F x
+1 B o
+5 B x
+6 A o
+6 H x
+6 G o
+6 E x
+6 F o
+5 C x
+8 B o
+7 C x
+7 D o
+7 A x
+o no valid move
+7 E x
+8 E o
+8 D x
+8 C o
+7 F x
+7 G o
+7 H x
+8 G o
+8 F x
+8 H o
+x no valid move
+o no valid move
+38:26 Black (o) wins!

@@ -1,0 +1,38 @@
+1 F x
+2 F o
+1 E x
+3 C o
+3 A x
+2 C o
+1 D x
+1 B o
+1 C x
+2 E o
+1 A x
+2 A o
+2 B x
+5 A o
+5 C x
+6 E o
+5 B x
+6 A o
+7 A x
+6 F o
+6 G x
+7 F o
+7 D x
+6 H o
+7 H x
+8 D o
+7 C x
+7 G o
+7 E x
+8 G o
+8 H x
+8 C o
+8 F x
+8 E o
+8 B x
+o no valid move
+x no valid move
+6:58 White (x) wins!

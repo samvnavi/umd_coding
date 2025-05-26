@@ -1,0 +1,93 @@
+
+Reading entry from 0x24bf2c0 ... 
+4 entries stored in matrix at 0x24bf500.
+
+matrix at 0x24bf500 ...
+    1 (1,8)     8 (1,6)     7 (1,4)     1 (1,7) 
+
+Reading entry from 0x24bf2c0 ... 
+5 entries stored in matrix at 0x24bf660.
+
+matrix at 0x24bf660 ...
+    1 (2,2)     8 (2,4)     7 (1,3)     5 (2,3)     6 (1,5) 
+
+Reading entry from 0x24bf2c0 ... 
+6 entries stored in matrix at 0x24bf810.
+
+matrix at 0x24bf810 ...
+    1 (2,2)     8 (2,3)     7 (2,1)     6 (3,2)     7 (3,1) 
+    9 (3,3) 
+
+Reading entry from 0x24bf2c0 ... 
+7 entries stored in matrix at 0x24bfa10.
+
+matrix at 0x24bfa10 ...
+    1 (4,2)     8 (4,3)     7 (3,1)     5 (2,3)     6 (3,2) 
+    9 (1,2)     7 (1,1) 
+
+search 7 in matrix at 0x24bf500 ...
+1 4
+
+find max in matrix at 0x24bf500 ...
+maximum 8 at position (1, 6)
+
+Adding 0x24bf500 to 0x24bf010 ...
+
+matrix at 0x24bf2e0 ...
+    1 (1,8)     8 (1,6)     7 (1,4)     1 (1,7) 
+
+search 7 in matrix at 0x24bf660 ...
+1 3
+
+find max in matrix at 0x24bf660 ...
+maximum 8 at position (2, 4)
+
+Adding 0x24bf660 to 0x24bf2e0 ...
+
+matrix at 0x24bf440 has 9 non-zero entries.
+
+matrix at 0x24bf440 ...
+    1 (1,8)     8 (1,6)     7 (1,4)     1 (1,7)     1 (2,2) 
+    8 (2,4)     7 (1,3)     5 (2,3)     6 (1,5) 
+
+search 7 in matrix at 0x24bf810 ...
+2 1
+3 1
+
+find max in matrix at 0x24bf810 ...
+maximum 9 at position (3, 3)
+
+Adding 0x24bf810 to 0x24bf440 ...
+
+matrix at 0x24bfe90 has 13 non-zero entries.
+
+matrix at 0x24bfe90 ...
+    1 (1,8)     8 (1,6)     7 (1,4)     1 (1,7)     2 (2,2) 
+    8 (2,4)     7 (1,3)    13 (2,3)     6 (1,5)     7 (2,1) 
+    6 (3,2)     7 (3,1)     9 (3,3) 
+
+search 7 in matrix at 0x24bfa10 ...
+3 1
+1 1
+
+find max in matrix at 0x24bfa10 ...
+maximum 9 at position (1, 2)
+
+Adding 0x24bfa10 to 0x24bfe90 ...
+
+matrix at 0x24c02c0 has 17 non-zero entries.
+
+matrix at 0x24c02c0 ...
+    1 (1,8)     8 (1,6)     7 (1,4)     1 (1,7)     2 (2,2) 
+    8 (2,4)     7 (1,3)    18 (2,3)     6 (1,5)     7 (2,1) 
+   12 (3,2)    14 (3,1)     9 (3,3)     1 (4,2)     8 (4,3) 
+    9 (1,2)     7 (1,1) 
+
+Subtracting 0x24bf500 from 0x24c02c0 ...
+
+matrix at 0x24c0990 has 13 non-zero entries.
+
+matrix at 0x24c0990 ...
+    2 (2,2)     8 (2,4)     7 (1,3)    18 (2,3)     6 (1,5) 
+    7 (2,1)    12 (3,2)    14 (3,1)     9 (3,3)     1 (4,2) 
+    8 (4,3)     9 (1,2)     7 (1,1) 

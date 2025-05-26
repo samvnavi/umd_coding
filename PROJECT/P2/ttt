@@ -1,0 +1,52 @@
+
+Reading entry from 0x1d782a0 ... 
+10 entries stored in matrix at 0x1d784e0.
+
+matrix at 0x1d784e0 ...
+    1 (2,2)     8 (2,4)     7 (5,3)     5 (2,3)     6 (3,5) 
+    1 (5,1)     9 (5,2)     7 (3,3)     9 (3,1)     1 (6,3) 
+
+Reading entry from 0x1d782a0 ... 
+5 entries stored in matrix at 0x1d78c50.
+
+matrix at 0x1d78c50 ...
+    1 (2,2)     8 (2,4)     7 (1,3)     5 (2,3)     6 (1,5) 
+
+Reading entry from 0x1d782a0 ... 
+6 entries stored in matrix at 0x1d790a0.
+
+matrix at 0x1d790a0 ...
+    1 (2,2)     8 (2,3)     7 (2,1)     6 (3,2)     7 (3,1) 
+    9 (3,3) 
+
+Multiplying 0x1d784e0 with 0x1d78c50 ...
+
+matrix at 0x1d782a0 has 9 non-zero entries.
+
+matrix at 0x1d782a0 ...
+    1 (2,2)     5 (2,3)     8 (2,4)    63 (3,3)    54 (3,5) 
+    9 (5,2)    52 (5,3)    72 (5,4)     6 (5,5) 
+
+Finding path from (2, 2) to (1, 3) ...
+1 (2,2)
+5 (2,3)
+7 (1,3)
+
+Multiplying 0x1d78c50 with 0x1d790a0 ...
+
+matrix at 0x1d784a0 has 6 non-zero entries.
+
+matrix at 0x1d784a0 ...
+   49 (1,1)    42 (1,2)    63 (1,3)    42 (2,1)    31 (2,2) 
+   53 (2,3) 
+
+Finding path from (2, 2) to (2, 1) ...
+1 (2,2)
+7 (2,1)
+
+
+Finding path from (3, 5) to (2, 2) ...
+6 (3,5)
+7 (3,3)
+5 (2,3)
+1 (2,2)
